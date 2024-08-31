@@ -4,34 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Navbar</title>
     <link rel="stylesheet" href="css/forms.css">
 </head>
+
 <body>
-<form id="contact-form" action="/submit-form" method="post">
-    <div class="form-group">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-  
-    <div class="form-group">
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-  
-    <div class="form-group">
-      <label for="password">Senha:</label>
-      <input type="password" id="password" name="password" required>
-    </div>
-  
-    
-  
-    <div class="form-actions">
-      <button type="submit">Enviar</button>
-      <button type="reset">Limpar</button>
-    </div>
-  </form>
-  </body>
+
+  <header>
+    <nav class="nav-form">
+      <a class="logo-form" href="/index.html">Logo</a>
+    </nav>
+  </header>
+
+  <div class="container" id="container">
+      <div class="form-container sign-up">
+          <form>
+              <h1>Cadastrar</h1>
+              <div class="social-icons">
+                  <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <span>ou use seu e-mail de registros
+                para usar todos os recursos do site.</span>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <button>Criar</button>
+          </form>
+      </div>
+      <div class="form-container sign-in">
+          <form>
+              <h1>Entrar</h1>
+              <div class="social-icons">
+                  <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <span>ou use seu email e senha</span>
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <a href="#">Esqueceu sua senha?</a>
+              <button>Logar</button>
+          </form>
+      </div>
+      <div class="toggle-container">
+          <div class="toggle">
+              <div class="toggle-panel toggle-left">
+                  <h1>Bem Vindo</h1>
+                  <p>Insira seus dados pessoais para utilizar todos os recursos do site</p>
+                  <button class="hidden" id="login">Sign In</button>
+              </div>
+              <div class="toggle-panel toggle-right">
+                  <h1>Bem vindo de volta!</h1>
+                  <p>Cadastre-se com seus dados pessoais para utilizar todos os recursos do site</p>
+                  <button class="hidden" id="register">Cadastra-se</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="js/forms.js"></script>
+</body>
 
   </html>
 
