@@ -194,7 +194,7 @@ main{
 }
 
 main {
-    height: 80vh;
+    height: 1000px;
 }
 
 footer {
@@ -418,4 +418,92 @@ footer {
 
 .hidden {
   display: none;
+}
+
+
+/* Estiliza o main como grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+  padding: 70px;
+  box-sizing: border-box;
+}
+
+/* Estiliza cada caixa de produto */
+.product-box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.product-details {
+  padding: 20px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.product-title {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #e6007e;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.buy-button {
+  background-color: #ff6699;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #e6007e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .product-details {
+      padding: 15px;
+  }
+
+  .product-title {
+      font-size: 18px;
+  }
+
+  .product-price {
+      font-size: 16px;
+  }
+
+  .buy-button {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
 }
