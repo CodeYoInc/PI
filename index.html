@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">Logo</a>
+
+        <div class="search-container">
+          <input type="text" id="search-bar" placeholder="O que você está procurando?">
+          <button id="search-button"><img src="procurar.png"></button>
+      </div>
+      
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      
+        <ul class="nav-list">
+          
+          <div style="position:relative";>
+            <button id="cart-button">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">  
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>      
+              <span id="cart-count">0</span>
+            </button> 
+            
+            <div id="cart-dropdown" class="hidden">
+              <div class="cart-items">
+                <!-- Aqui você pode adicionar itens dinâmicos -->
+                <p>Seu carrinho está vazio.</p>
+              </div>
+              <div class="cart-footer">
+                <a href="#" class="checkout-button">Finalizar Compra</a>
+              </div>
+            </div>
+          </div>
+
+        
+          <li><a href="index.html">Início</a></li>
+          <li><a href="forms.html">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <main>
+      .
+    </main>
+
+    <footer>
+      <div id="footer_content">
+          <div id="footer_contacts">
+              <h1>Logo</h1>
+              <p>Seu bem estar nossa felicidade.</p>
+
+              <div id="footer_social_media">
+                  <a href="https://www.instagram.com" class="footer-link" id="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+
+                  <a href="https://www.facebook.com" class="footer-link" id="facebook">
+                      <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+
+                  <a href="https://web.whatsapp.com" class="footer-link" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+              </div>
+          </div>
+          
+          <ul class="footer-list">
+              <li>
+                  <h3>Contato</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Sobre nos</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Suporte</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Termos de usuário</a>
+              </li>
+          </ul>
+
+          <ul class="footer-list">
+              <li>
+                  <h3>Produtos</h3>
+              </li>
+              <li>
+                  <a href="https://play.google.com/store/apps" class="footer-link">Compre no App</a>
+              </li>
+          </ul>
+
+          <div id="footer_subscribe">
+              <h3>Nos mande um E-mail</h3>
+
+              <p>
+                Insira seu e-mail para ser notificado sobre
+                novos produtos.
+              </p>
+
+              <div id="input_group">
+                  <input type="email" id="email">
+                  <button>
+                      <i class="fa-regular fa-envelope"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div id="footer_copyright">
+          &#169
+          2024 todos os direitos reservados.
+      </div>
+  </footer>
+
+
+    <script src="js/mobile-navbar.js"></script>
+    <script src="js/cart-button.js"></script>
+    
+  </body>
+</html>
